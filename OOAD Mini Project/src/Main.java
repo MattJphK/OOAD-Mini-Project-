@@ -2,6 +2,8 @@ import java.util.*;
 import java.io.*;
 import java.lang.*;
 import Bookings.*;
+import Transactions.*;
+
 
 public class Main {
     public static void main(String[] args) {
@@ -21,6 +23,25 @@ public class Main {
 
 
         System.out.println(booking1);
+        System.out.println();
+
+        Withdraw withdraw1 = new Withdraw(2000, "2/12/24",500);
+
+        System.out.println(withdraw1);
+        System.out.println();
+
+
+        Deposit deposit1 = new Deposit(2000, "2/12/24",500);
+
+        System.out.println(deposit1);
+        System.out.println();
+
+        Loans loan1 = new Loans();
+        loan1.setLoanAmount(300000);
+        loan1.setLoanType(LoanType.MORTGAGE);
+
+        System.out.println(loan1);
+
 
 
 
