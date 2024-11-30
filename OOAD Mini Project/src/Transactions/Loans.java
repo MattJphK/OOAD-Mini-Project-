@@ -13,6 +13,9 @@ public class Loans {
     }
 
     public void setLoanAmount(int loanAmount) {
+        if (loanAmount < 0){
+            throw new NegativeNumException("loanAmount cannot be negative number otherwise the loan loses you money");
+        }
         this.loanAmount = loanAmount;
     }
 
