@@ -3,6 +3,9 @@ package Bookings;
 public class Booking {
     //Variables
     private String bookingName;
+    private int bookingId;
+    private BookingType bookingType;
+    private Staff banker;
 
     public BookingType getBookingType() {
         return bookingType;
@@ -12,9 +15,7 @@ public class Booking {
         this.bookingType = bookingType;
     }
 
-    private int bookingId;
-    private BookingType bookingType;
-    private Staff banker;
+
 
     public Staff getBanker() {
         return banker;
