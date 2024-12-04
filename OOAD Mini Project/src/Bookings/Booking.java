@@ -4,6 +4,7 @@ public class Booking {
     //Variables
     private String bookingName;
     private int bookingId;
+    protected String date;
     private BookingType bookingType;
     private Staff banker;
 
@@ -15,8 +16,6 @@ public class Booking {
         this.bookingType = bookingType;
     }
 
-
-
     public Staff getBanker() {
         return banker;
     }
@@ -25,13 +24,7 @@ public class Booking {
         this.banker = banker;
     }
 
-    //Constructor
-    public Booking() {
-        this.bookingName = bookingName;
-        this.bookingId = bookingId;
-    }
 
-    //Methods
     public int getBookingId() {
         return bookingId;
     }
@@ -48,9 +41,27 @@ public class Booking {
         this.bookingName = bookingName;
     }
 
+    public String getDate() {
+        return date;
+    }
+
+    public void setDate(String date) {
+        this.date = date;
+    }
+
+    //Constructor
+    public Booking() {
+        this.bookingName = bookingName;
+        this.bookingId = bookingId;
+        this.date = date;
+        this.bookingType = bookingType;
+        this.banker = banker;
+
+    }
+
     @Override
     public String toString() {
-        return "Booking [bookingId=" + bookingId + ", bookingName=" + bookingName + " " + banker + " This is an "
+        return "Booking [bookingId=" + bookingId + ", bookingName=" + bookingName + " Date: " + date + " " + banker + " This is an "
                 + bookingType + " appointment" + "]";
 
     }

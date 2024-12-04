@@ -19,7 +19,8 @@ public class Main {
         booking1.setBookingName("The Murphy's");
         booking1.setBookingId(101);
         booking1.setBanker(staff1);
-        booking1.setBookingType(BookingType.IN_PERSON);
+        booking1.setBookingType(BookingType.CONFIRMED);
+        booking1.setDate("4/12/24");
 
 
         System.out.println(booking1);

@@ -14,6 +14,7 @@ public class Staff extends Booking {
     }
 
     public Staff(String staffName, int staffID) {
+        super();
         this.staffName = staffName;
         this.staffID = staffID;
     }
