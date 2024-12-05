@@ -3,12 +3,13 @@ package Insurance;
 public class Claim extends Insurance {
     private int ClaimID;
     private Double ClaimAmount;
+    public PolicyType policyType;
 
-    public Claim(int claimID, Double claimAmount,int insuranceID, String policy_No, String coverage) {
+    public Claim(int claimID, Double claimAmount,int insuranceID, String policy_No, String coverage, PolicyType policyType) {
         super(insuranceID, policy_No, coverage);
         ClaimID = claimID;
         ClaimAmount = claimAmount;
-
+        this.policyType = policyType;
     }
 
     public int getClaimID() {
@@ -29,6 +30,6 @@ public class Claim extends Insurance {
 
     @Override
     public String toString() {
-        return "Claim{ClaimID = " + ClaimID + ", ClaimAmount = €" + ClaimAmount + super.toString() + '}';
+        return "Claim{ClaimID = " + ClaimID + ", ClaimAmount = €" + ClaimAmount + super.toString() + "PolicyType = " + policyType + '}';
     }
 }

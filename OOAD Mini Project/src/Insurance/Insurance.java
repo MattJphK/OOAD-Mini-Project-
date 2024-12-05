@@ -34,6 +34,6 @@ public abstract class Insurance  {
 
     @Override
     public String toString() {
-        return " Insurance{" + "insuranceID = " + insuranceID + ", Policy_No = " + Policy_No + ' ' + ", Coverage = " + Coverage + ' ' + '}';
+        return " Insurance{" + "insuranceID = " + insuranceID + ", Policy_No = " + Policy_No + ' ' + ", Coverage = " + Coverage + ' '  + '}';
     }
 }
