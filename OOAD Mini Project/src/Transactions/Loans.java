@@ -4,7 +4,9 @@ public class Loans {
     private int loanAmount;
     private LoanType loanType;
 
-    public Loans() {
+    public Loans(int loanAmount, LoanType loanType) {
+        this.loanAmount = loanAmount;
+        this.loanType = loanType;
 
     }
 

@@ -15,8 +15,8 @@ public class Withdraw extends Transaction implements CalAmount {
 
     @Override
     public String toString() {
-        return super.toString() + "\nWithdraw Amount: " + withdrawAmount + " " + calAmount() +
-                " New Balance: €" + currentAmount;
+        return super.toString() + "\nWithdraw Amount: " + withdrawAmount +
+                " New Balance: € " + calAmount() ;
     }
 
 }

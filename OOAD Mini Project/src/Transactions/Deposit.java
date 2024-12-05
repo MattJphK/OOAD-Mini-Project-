@@ -15,8 +15,7 @@ public class Deposit extends Transaction implements CalAmount {
 
     @Override
     public String toString() {
-        return super.toString() + "\nDeposit Amount: " + depositAmount + " " + calAmount() +
-                " New Balance: €" + currentAmount;
+        return super.toString() + "\nDeposit Amount: " + depositAmount + " New Balance: € " + calAmount();
     }
 
 

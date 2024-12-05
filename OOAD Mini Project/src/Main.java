@@ -1,5 +1,3 @@
-import java.util.*;
-import java.io.*;
 import java.lang.*;
 import Bookings.*;
 import Transactions.*;
@@ -8,14 +6,9 @@ import Transactions.*;
 public class Main {
     public static void main(String[] args) {
 
-        Branch branch1 = new Branch();
-        branch1.setBranchID(401);
-
         Staff staff1 = new Staff("John Chris", 201);
-        staff1.setBranch(branch1);
 
-
-        Booking booking1 = new Booking();
+        BookingInfo booking1 = new BookingInfo(401);
         booking1.setBookingName("The Murphy's");
         booking1.setBookingId(101);
         booking1.setBanker(staff1);
@@ -37,15 +30,7 @@ public class Main {
         System.out.println(deposit1);
         System.out.println();
 
-        Loans loan1 = new Loans();
-        loan1.setLoanAmount(300000);
-        loan1.setLoanType(LoanType.MORTGAGE);
-
+        Loans loan1 = new Loans(30000,LoanType.MORTGAGE);
         System.out.println(loan1);
-
-
-
-
-
     }
 }

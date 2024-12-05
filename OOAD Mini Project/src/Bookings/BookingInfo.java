@@ -1,6 +1,6 @@
 package Bookings;
 
-public final class Branch extends Booking {
+public final class BookingInfo extends Booking {
     private int branchID;
 
     public int getBranchID() {
@@ -11,9 +11,14 @@ public final class Branch extends Booking {
         this.branchID = branchID;
     }
 
+    public BookingInfo(int branchID) {
+        super();
+        this.branchID = branchID;
+    }
+
     @Override
     public String toString() {
-        return " Branch ID" + " " + branchID;
+        return super.toString() + " Branch ID" + " " + branchID;
     }
 
 }

@@ -1,6 +1,6 @@
 package Bookings;
 
-public class Booking {
+public abstract class Booking {
     //Variables
     private String bookingName;
     private int bookingId;
@@ -61,7 +61,7 @@ public class Booking {
 
     @Override
     public String toString() {
-        return "Booking [bookingId=" + bookingId + ", bookingName=" + bookingName + " Date: " + date + " " + banker + " This is an "
+        return "Booking [bookingId=" + bookingId + ", bookingName=" + bookingName + " Date: " + date + "\n" + " " + banker + " This is an "
                 + bookingType + " appointment" + "]";
 
     }
