@@ -1,10 +1,11 @@
 package Transactions;
+import Customer.*;
 
 public class Withdraw extends Transaction implements CalAmount {
     protected float withdrawAmount;
 
-    public Withdraw(float currentAmount, String date, float withdrawAmount) {
-        super(currentAmount, date);
+    public Withdraw(Person person, float currentAmount, String date, float withdrawAmount) {
+        super(person,currentAmount, date);
         this.withdrawAmount = withdrawAmount;
 ;    }
     @Override

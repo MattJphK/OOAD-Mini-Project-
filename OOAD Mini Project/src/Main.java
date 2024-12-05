@@ -32,13 +32,13 @@ public class Main {
         System.out.println(booking1);
         System.out.println();
 
-        Withdraw withdraw1 = new Withdraw(2000, "2/12/24",500);
+        Withdraw withdraw1 = new Withdraw(customer1,2000, "2/12/24",500);
 
         System.out.println(withdraw1);
         System.out.println();
 
 
-        Deposit deposit1 = new Deposit(2000, "2/12/24",500);
+        Deposit deposit1 = new Deposit(customer1, 2000,"2/12/24",500);
 
         System.out.println(deposit1);
         System.out.println();

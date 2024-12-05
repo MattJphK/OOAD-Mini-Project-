@@ -1,10 +1,13 @@
 package Transactions;
+import Customer.*;
 
 public abstract class Transaction {
+    private Person person;
     public float currentAmount;
     private String date;
 
-    public Transaction(float currentAmount, String date) {
+    public Transaction(Person person, float currentAmount, String date) {
+        this.person = person;
         this.currentAmount = currentAmount;
         this.date = date;
     }
@@ -25,8 +28,16 @@ public abstract class Transaction {
         this.currentAmount = currentAmount;
     }
 
+    public Person getPerson() {
+        return person;
+    }
+
+    public void setPerson(Person person) {
+        this.person = person;
+    }
+
     @Override
     public String toString() {
-        return "Transaction{" + "currentAmount=" + currentAmount + ", date=" + date + '}';
+        return person +"\n" +"Transaction{" + "currentAmount=" + currentAmount + ", date=" + date + '}';
     }
 }
