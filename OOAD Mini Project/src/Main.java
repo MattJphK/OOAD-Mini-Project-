@@ -3,6 +3,7 @@ import Bookings.*;
 import Customer.ContactINFO;
 import Customer.CustomerID;
 import Customer.CustomerType;
+import Insurance.*;
 import Transactions.*;
 
 
@@ -28,6 +29,8 @@ public class Main {
         booking1.setDate("4/12/24");
         booking1.setPerson(customer1);
 
+        Claim claim = new Claim(45, 2993.00,78,"6171","Life");
+        System.out.println(claim);
 
         System.out.println(booking1);
         System.out.println();
@@ -37,8 +40,12 @@ public class Main {
         System.out.println(withdraw1);
         System.out.println();
 
+<<<<<<< HEAD
 
         Deposit deposit1 = new Deposit(customer1, 2000,"2/12/24",500);
+=======
+        Deposit deposit1 = new Deposit(2000, "2/12/24",500);
+>>>>>>> a335b5d50cbfdd5fa2027092366af6153416a23e
 
         System.out.println(deposit1);
         System.out.println();
