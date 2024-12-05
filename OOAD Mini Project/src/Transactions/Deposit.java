@@ -1,10 +1,11 @@
 package Transactions;
+import Customer.*;
 
 public class Deposit extends Transaction implements CalAmount {
     protected float depositAmount;
 
-    public Deposit(float currentAmount, String date, float depositAmount) {
-        super(currentAmount, date);
+    public Deposit(Person person,float currentAmount, String date, float depositAmount) {
+        super(person,currentAmount, date);
         this.depositAmount = depositAmount;
     }
     @Override
