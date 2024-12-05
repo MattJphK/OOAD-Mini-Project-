@@ -40,13 +40,9 @@ public class Main {
         System.out.println(withdraw1);
         System.out.println();
 
-<<<<<<< HEAD
 
         Deposit deposit1 = new Deposit(customer1, 2000,"2/12/24",500);
-=======
-        Deposit deposit1 = new Deposit(2000, "2/12/24",500);
->>>>>>> a335b5d50cbfdd5fa2027092366af6153416a23e
-
+        
         System.out.println(deposit1);
         System.out.println();
 
