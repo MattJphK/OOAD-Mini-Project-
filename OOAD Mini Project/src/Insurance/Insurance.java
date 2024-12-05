@@ -6,8 +6,10 @@ public abstract class Insurance  {
     private int insuranceID;
     private String Policy_No;
     private String Coverage;
+    private Person person;
 
-    public Insurance(int insuranceID, String policy_No, String coverage) {
+    public Insurance(Person person,int insuranceID, String policy_No, String coverage) {
+        this.person = person;
         this.insuranceID = insuranceID;
         Policy_No = policy_No;
         Coverage = coverage;
@@ -32,8 +34,24 @@ public abstract class Insurance  {
         this.Coverage = coverage;
     }
 
+    public int getInsuranceID() {
+        return insuranceID;
+    }
+
+    public void setInsuranceID(int insuranceID) {
+        this.insuranceID = insuranceID;
+    }
+
+    public Person getPerson() {
+        return person;
+    }
+
+    public void setPerson(Person person) {
+        this.person = person;
+    }
+
     @Override
     public String toString() {
-        return " Insurance{" + "insuranceID = " + insuranceID + ", Policy_No = " + Policy_No + ' ' + ", Coverage = " + Coverage + ' '  + '}';
+        return person + "\n" + " Insurance{" + "insuranceID = " + insuranceID + ", Policy_No = " + Policy_No + ' ' + ", Coverage = " + Coverage + ' '  + '}';
     }
 }

@@ -13,13 +13,23 @@ public class Main {
         CustomerID custId1 = new CustomerID();
         custId1.setCustomerID(1);
 
-        ContactINFO customer1 = new ContactINFO("John Murphy","JohnM@gmail.com",custId1,"+353 897055190","43 Hazelbury Green"
-        , CustomerType.INDIVIDUAL);
+        CustomerID custId2 = new CustomerID();
+        custId2.setCustomerID(2);
+
+        ContactINFO customer1 = new ContactINFO("John Murphy","JohnM@gmail.com",custId1,"+353 897055190",
+                "43 Hazelbury Green", CustomerType.INDIVIDUAL);
+
+        ContactINFO customer2 = new ContactINFO("The Navan's","JNavan@gmail.com",custId2,"+353 899065679"
+        ,"46 Crook Valley", CustomerType.COUPLE);
 
         //System.out.println(customer1);
         System.out.println();
 
         Staff staff1 = new Staff("John Chris", 201);
+
+        Claim claim = new Claim(customer1,45, 2993.00,78,"6171","Life", PolicyType.LIFE);
+        System.out.println(claim);
+        System.out.println();
 
         BookingInfo booking1 = new BookingInfo(401);
         booking1.setBookingName("The Murphy's");
@@ -27,10 +37,7 @@ public class Main {
         booking1.setBanker(staff1);
         booking1.setBookingType(BookingType.CONFIRMED);
         booking1.setDate("4/12/24");
-        booking1.setPerson(customer1);
-
-        Claim claim = new Claim(45, 2993.00,78,"6171","Life", PolicyType.LIFE);
-        System.out.println(claim);
+        booking1.setPerson(customer2);
 
         System.out.println(booking1);
         System.out.println();
