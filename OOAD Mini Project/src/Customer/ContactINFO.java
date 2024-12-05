@@ -5,10 +5,11 @@ public class ContactINFO extends Person {
     protected String address;
     public CustomerType customerType;
 
-    public ContactINFO(String name, String email, String phone, String address, CustomerType customerType) {
-        super(name, email);
+    public ContactINFO(String name, String email, CustomerID custId, String phone, String address, CustomerType customerType) {
+        super(name, email,custId);
         this.phone = phone;
         this.address = address;
+        this.customerType = customerType;
     }
 
     public String getPhone() {
@@ -31,7 +32,7 @@ public class ContactINFO extends Person {
 
     @Override
     public String toString() {
-        return "ContactINFO{" + "phone='" + phone + ' ' + ", address='" + address + ' ' + ", name='" + name + ' ' + ", email='" + email + ' ' + "CustomerType" + customerType + '}';
+        return super.toString() + "\nPhone: " + phone + "\nAddress: " + address + "\nType: " + customerType;
     }
 }
 

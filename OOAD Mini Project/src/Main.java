@@ -1,10 +1,22 @@
 import java.lang.*;
 import Bookings.*;
+import Customer.ContactINFO;
+import Customer.CustomerID;
+import Customer.CustomerType;
 import Transactions.*;
 
 
 public class Main {
     public static void main(String[] args) {
+
+        CustomerID custId1 = new CustomerID();
+        custId1.setCustomerID(1);
+
+        ContactINFO customer1 = new ContactINFO("John Murphy","JohnM@gmail.com",custId1,"+353 897055190","43 Hazelbury Green"
+        , CustomerType.INDIVIDUAL);
+
+        System.out.println(customer1);
+        System.out.println();
 
         Staff staff1 = new Staff("John Chris", 201);
 
