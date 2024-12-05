@@ -29,6 +29,6 @@ public class Claim extends Insurance {
 
     @Override
     public String toString() {
-        return "Claim{ClaimID= " + ClaimID + ", ClaimAmount=" + ClaimAmount + super.toString() + '}';
+        return "Claim{ClaimID = " + ClaimID + ", ClaimAmount = €" + ClaimAmount + super.toString() + '}';
     }
 }
