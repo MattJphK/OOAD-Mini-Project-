@@ -1,8 +1,11 @@
 package Bookings;
+import Customer.*;
+
 
 public abstract class Booking {
     //Variables
     private String bookingName;
+    private Person person;
     private int bookingId;
     protected String date;
     private BookingType bookingType;
@@ -49,6 +52,14 @@ public abstract class Booking {
         this.date = date;
     }
 
+    public Person getPerson() {
+        return person;
+    }
+
+    public void setPerson(Person person) {
+        this.person = person;
+    }
+
     //Constructor
     public Booking() {
         this.bookingName = bookingName;
@@ -56,12 +67,13 @@ public abstract class Booking {
         this.date = date;
         this.bookingType = bookingType;
         this.banker = banker;
+        this.person = person;
 
     }
 
     @Override
     public String toString() {
-        return "Booking [bookingId=" + bookingId + ", bookingName=" + bookingName + " Date: " + date + "\n" + " " + banker + " This is an "
+        return person + "\n"+ "Booking [bookingId=" + bookingId + ", bookingName=" + bookingName + " Date: " + date + "\n" + " " + banker + " This is an "
                 + bookingType + " appointment" + "]";
 
     }

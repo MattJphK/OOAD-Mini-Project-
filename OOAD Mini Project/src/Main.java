@@ -15,7 +15,7 @@ public class Main {
         ContactINFO customer1 = new ContactINFO("John Murphy","JohnM@gmail.com",custId1,"+353 897055190","43 Hazelbury Green"
         , CustomerType.INDIVIDUAL);
 
-        System.out.println(customer1);
+        //System.out.println(customer1);
         System.out.println();
 
         Staff staff1 = new Staff("John Chris", 201);
@@ -26,6 +26,7 @@ public class Main {
         booking1.setBanker(staff1);
         booking1.setBookingType(BookingType.CONFIRMED);
         booking1.setDate("4/12/24");
+        booking1.setPerson(customer1);
 
 
         System.out.println(booking1);
