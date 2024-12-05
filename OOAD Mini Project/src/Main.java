@@ -29,7 +29,7 @@ public class Main {
         booking1.setDate("4/12/24");
         booking1.setPerson(customer1);
 
-        Claim claim = new Claim(45, 2993.00,78,"6171","Life");
+        Claim claim = new Claim(45, 2993.00,78,"6171","Life", PolicyType.LIFE);
         System.out.println(claim);
 
         System.out.println(booking1);
