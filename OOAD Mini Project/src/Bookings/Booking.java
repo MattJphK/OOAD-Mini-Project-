@@ -4,11 +4,11 @@ import Customer.*;
 
 public abstract class Booking {
     //Variables
-    private String bookingName;
+    public String bookingName;
     private Person person;
     private int bookingId;
     protected String date;
-    private BookingType bookingType;
+    public BookingType bookingType;
     private Staff banker;
 
     public BookingType getBookingType() {
