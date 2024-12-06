@@ -31,7 +31,7 @@ public class Main {
         Staff staff1 = new Staff("John Chris", 201);
 
         //Claim
-        Claim claim = new Claim(customer1,45, 2993.00,78,"6171","Life", PolicyType.LIFE);
+        Claim claim = new Claim(customer1,45, 3000.00,78,"6171","Life", PolicyType.LIFE);
         System.out.println(claim);
         System.out.println();
 

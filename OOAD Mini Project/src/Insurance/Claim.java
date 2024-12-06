@@ -25,12 +25,18 @@ public class Claim extends Insurance {
         return ClaimAmount;
     }
 
-    public void setClaimAmount(Double claimAmount) {
-        ClaimAmount = claimAmount;
+    public static double tax = 20.00;
+
+    public final void setClaimAmount(double claimAmount) {
+        if (claimAmount >= 100.00) {
+            claimAmount = claimAmount - tax;
+        }
+        this.ClaimAmount = claimAmount;
     }
+
 
     @Override
     public String toString() {
-        return super.toString() + "\n" + "Claim{ClaimID = " + ClaimID + ", ClaimAmount = €" + ClaimAmount + "PolicyType = " + policyType + '}';
+        return super.toString() + "\n" + "Claim{ClaimID = " + ClaimID + ", ClaimAmount = €" + ClaimAmount + " PolicyType = " + policyType + '}';
     }
 }
